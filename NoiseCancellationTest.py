@@ -13,9 +13,10 @@ class Cancellation():
         self.mix = read_wav(mix_path)
         self.noise = read_wav(noise_path)
         self.frame_length = frame_length
-        net = DINC_Net()
-        dicts = torch.load(model, map_location='cpu')
-        net.load_state_dict(dicts["model_state_dict"])
+        # net = DINC_Net()
+        net = torch.load(model, map_location='cpu')
+        # net.load_state_dict(dicts["model_state_dict"])
+        # torch.save(net, "./model.pt")
         self.logger = get_logger(__name__)
         self.net = net.cuda()
         self.device = torch.device('cuda:{}'.format(
