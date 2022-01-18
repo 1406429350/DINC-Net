@@ -2,7 +2,7 @@
 
 #####   The trained model and denoising example for cardiopulmonary auscultation enhancement
 
-  paper : Cardiopulmonary Auscultation Enhancement with a Two-Stage Noise Cancellation Approach
+  Paper : Cardiopulmonary Auscultation Enhancement with a Two-Stage Noise Cancellation Approach
 
 ### Requirement
 
