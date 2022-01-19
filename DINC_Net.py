@@ -373,7 +373,7 @@ def check_parameters(net):
     return parameters / 10**6
 
 
-def test_convtasnet():
+def test_DINC_Net():
     x = torch.randn(1, 32000)
     y = torch.randn(1, 32000)
     nnet = DINC_Net()
@@ -383,4 +383,4 @@ def test_convtasnet():
 
 
 if __name__ == "__main__":
-    test_convtasnet()
+    test_DINC_Net()
